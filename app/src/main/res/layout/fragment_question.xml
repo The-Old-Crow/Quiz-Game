@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".QuestionFragment">
+
+    <TextView android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        android:textSize="60dp"/>
+
+    <TextView android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:text="What is the answer to this question?"
+        android:textSize="25sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="120dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn_option1"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="2"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="fill"
+            android:background="@color/colorTertiary"
+            android:text="Option 1"
+            android:fontFamily="sans-serif">
+        </Button>
+
+        <Button android:id="@+id/btn_option2"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="2"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="fill"
+            android:background="@color/colorTertiary"
+            android:text="Option 2"
+            android:fontFamily="sans-serif">
+        </Button>
+
+        <Button android:id="@+id/btn_option3"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="2"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="fill"
+            android:background="@color/colorTertiary"
+            android:text="Option 3"
+            android:fontFamily="sans-serif">
+        </Button>
+
+        <Button android:id="@+id/btn_option4"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="2"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="fill"
+            android:background="@color/colorTertiary"
+            android:text="Option 4"
+            android:fontFamily="sans-serif">
+        </Button>
+    </GridLayout>
+
+</FrameLayout>
